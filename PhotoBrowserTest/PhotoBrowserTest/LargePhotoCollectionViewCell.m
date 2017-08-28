@@ -43,6 +43,7 @@
     //添加 imageView
     UIImageView *imageView = [[UIImageView alloc]init];
     imageView.userInteractionEnabled = YES;
+    imageView.layer.shouldRasterize = YES; // 抗锯齿 处理
     self.imageView = imageView;
     
 }
